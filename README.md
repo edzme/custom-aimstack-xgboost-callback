@@ -12,7 +12,7 @@
 #### Example implementation using xgboost's native api:
 
 ```python
-from custom-aim-xgboost-callback import CustomAimCallback
+from custom_xgboost_aim_callback import CustomAimCallback
 
 aim_server_host = os.environ.get("AIM_SERVER_HOST")
 aim_server_port = os.environ.get("AIM_SERVER_PORT")
