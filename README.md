@@ -8,7 +8,12 @@
 - Logs system params (cpu, gpu, etc)
 - Fixes the epoch = 0 issue in the default aimxgboost callback
 
+
+#### Example implementation using xgboost's native api:
+
 ```python
+from custom-aim-xgboost-callback import CustomAimCallback
+
 aim_server_host = os.environ.get("AIM_SERVER_HOST")
 aim_server_port = os.environ.get("AIM_SERVER_PORT")
 aim_host_path = f"aim://{aim_server_host}:{aim_server_port}"
