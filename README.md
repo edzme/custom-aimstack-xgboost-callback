@@ -30,7 +30,7 @@ callbacks.append(aim_callback)
 log.debug(f"Added AimCallback for experiment '{aim_experiment_name}'.")
 
 model = xgb.train(
-    params=params,
+    params=hyperparams,
     dtrain=dtrain,
     num_boost_round=max_boost_round,
     evals=evals,
